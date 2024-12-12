@@ -1,20 +1,14 @@
 import React, { useState } from 'react'
+import Jokes from './Jokes'
+import { Link } from 'react-router-dom'
 
-const Homepage = () => {
-    const [pages, setPages] = useState([
-        {
-            id: '1',
-            name: 'lorem ipsum'
-        }
-    ])
-
-    
+const Homepage = () => {  
   return (
-    <>
-        { pages.map((page) => (
-            <p> {page.name} </p>
-        )) }
-    </>
+    <div className="container mx-auto w-3/6">
+        <Link to={'/use-example-1'} >
+            <h1>Link</h1>
+        </Link>
+    </div>
   )
 }
 
